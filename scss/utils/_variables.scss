@@ -1,0 +1,32 @@
+/* цвет текста
+#212121 - заголовки
+#757575 - основной текст
+#2196F3 - синий
+#FFFFFF - белый
+rgba(255, 255, 255, 0.6) адресс в подвале*/
+
+/* цвет фона
+#E5E5E5 - основной
+#F5F4FA - вторичный
+#FFFFFF - голова
+#2F303A - подвал*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primery-bgr-color: #E5E5E5;
+    --title-white-color: #FFFFFF;
+    --accent-bgr-color: #F5F4FA;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

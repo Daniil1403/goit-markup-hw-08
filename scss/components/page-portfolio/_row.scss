@@ -1,0 +1,59 @@
+/* Навигация */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row__list:not(:last-child) {
+    margin-right: 8px;
+}
+
+.row__btn {
+    height: 38px;
+    padding: 0;   
+    background-color: var(--accent-bgr-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;  
+    text-align: center;
+    border: none;
+
+    transition: background-color 250ms var(--timing-function), 
+                color 250ms var(--timing-function), 
+                box-shadow 250ms var(--timing-function), 
+                border-radius 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--title-white-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+}
+
+.row__btn.current {
+    background-color: var(--accent-color);
+}
+
+.row__btn--oll {
+    width: 73px;
+}
+
+.row__btn--veb {
+    width: 128px;
+}
+
+.row__btn--appendix {
+    width: 145px;
+}
+
+.row__btn--design {
+    width: 103px;
+}
+
+.row__btn--marketing {
+    width: 130px;
+}

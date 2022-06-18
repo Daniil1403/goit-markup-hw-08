@@ -1,0 +1,35 @@
+.address__text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: var(--title-white-color);
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.address__link {
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    line-height: 1.71;
+    font-style: normal;
+
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__list {
+    margin-top: 9px;
+}
+
+.address__list {
+    margin-top: 9px;
+}
+
+br {
+    display: none;
+}

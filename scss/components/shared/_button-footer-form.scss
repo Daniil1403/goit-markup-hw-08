@@ -1,0 +1,18 @@
+.button--subscribe {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button__text {
+    display: flex;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em; 
+    color: var(--title-white-color);
+}
