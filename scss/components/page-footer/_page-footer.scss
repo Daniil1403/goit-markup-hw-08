@@ -1,5 +1,5 @@
 /* Footer */
-.footer {
+/*.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -18,4 +18,39 @@
 .footer .basement-conteiner {
     padding-left: 0;
     margin-right: 70px;
+}
+*/
+---------------------------------------------------------------
+/* Footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.basement {
+    /*display: flex;
+    align-items: center;*/
+    /*width: 1230px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-widht: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-widht: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-widht: $desktop) {
+        width: $desktop;
+    }
+}
+
+.footer .basement-conteiner {
+    padding-left: 0;
+    /*margin-right: 70px;*/
 }

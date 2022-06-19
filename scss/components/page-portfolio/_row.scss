@@ -1,11 +1,15 @@
 /* Навигация */
 .row {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
 }
 
-.row__list:not(:last-child) {
-    margin-right: 8px;
+.row__list {
+    display: inline;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
 }
 
 .row__btn {
@@ -52,8 +56,12 @@
 
 .row__btn--design {
     width: 103px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .row__btn--marketing {
     width: 130px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }

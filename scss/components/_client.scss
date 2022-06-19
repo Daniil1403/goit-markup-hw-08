@@ -1,5 +1,5 @@
 /* Постоянные клиенты */
-.client {
+/*.client {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -39,6 +39,104 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background: var(--title-white-color);
+    text-align: center;
+    fill: #AFB1B8;
+
+    transition: border 250ms var(--timing-function), 
+                border-radius 250ms var(--timing-function), 
+                fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+        fill: var(--accent-color);
+    }
+}
+
+.client__icon {
+    fill: inherit;
+}
+
+.client__icon.group-1 {
+    width: 41px;
+    height: 46.7px;
+}
+
+.client__icon.group-2 {
+    width: 40px;
+    height: 52px;
+} 
+
+.client__icon.group-3 {
+    width: 43.46px;
+    height: 41.18px;
+} 
+
+.client__icon.group-4 {
+    width: 84.44px;
+    height: 40.62px;
+} 
+
+.client__icon.group-5 {
+    width: 62.54px;
+    height: 45.43px;
+} 
+
+.client__icon.group-6 {
+    width: 93.79px;
+    height: 43.93px;
+}
+*/
+
+/* Постоянные клиенты */
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client__title {
+    /*margin-top: 0;
+    margin-bottom: 50px;*/
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.client__list {
+    /*display: flex;*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.client__item {
+    align-items: center;
+
+    &:not(:last-child) {
+        /*margin-right: 30px;*/
+    }
+}
+
+.client__link {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
     margin: 0;
     padding: 0;
     width: 170px;

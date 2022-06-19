@@ -1,5 +1,5 @@
 /* Section */
-.section {
+/*.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -18,6 +18,46 @@
 
 .development__title {
     margin-top: 0;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+*/
+-------------------------------------------------------------
+/* Section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.conteiner {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 1230px;*/
+
+    @media screen and (min-widht: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-widht: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-widht: $desktop) {
+        width: $desktop;
+    }
+}
+
+.development {
+    padding-bottom: 94px;
+}
+
+.development__title {
+    /*margin-top: 0;*/
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
