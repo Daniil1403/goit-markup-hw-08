@@ -13,7 +13,18 @@
         <div class="mail-nav"> 
             <nav class="conteiner-nav">
                 <a href="" class="logo">Web<span class="logo__studio">Studio</span></a>
-                <ul class="site-nav list">
+                <!-- Кнопка для мобилки -->
+                <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
+                    <svg width="40", height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-button__icon-cross" href="./images/socials/twitter.svg"></use>
+                        <use class="menu-button__icon-menu" href="./images/socials/facebook.svg"></use>
+                    </svg>
+                </button>
+                <div class="menu-conteiner" id="menu-conteiner" data-menu>
+                    Контент меню
+                </div>
+
+                <!--<ul class="site-nav list">
                     <li class="site-nav__item">
                         <a href="" class="site-nav__link current">Студия</a>
                     </li>
@@ -23,9 +34,9 @@
                     <li class="site-nav__item">
                         <a href="" class="site-nav__link">Контакты</a>
                     </li>
-                </ul>
+                </ul>-->
             </nav>
-            <div class="contriner-auth">
+            <!--<div class="contriner-auth">
                 <ul class="auth-nav list">
                     <li class="auth-nav__item icon-envelope">
                         <a href="mailto:info@devstudio.com" class="auth-nav__link">info@devstudio.com
@@ -42,7 +53,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
         </div>
     </header>
     <main>
@@ -450,5 +461,6 @@
         </div>
     </footer> 
     <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
 </body>
 </html>

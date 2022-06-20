@@ -26,11 +26,14 @@
     display: flex;
     margin-left: auto;
     align-items: center;
-}
-*/
----------------------------------------------------------------
+}*/
+
+
+
+
 /* Header */
 .header {
+    position: relative;
     background-color: var(--title-white-color);
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -70,4 +73,46 @@
     /*display: flex;
     margin-left: auto;
     align-items: center;*/
+}
+
+/* Кнопка для мобилки */
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .menu-button__icon-cross {
+        display: none;
+    }
+
+    &.is-open .menu-button__icon-cross {
+        display: block;
+    }
+
+    &.is-open .menu-button__icon-menu {
+        display: none;
+    }
+}
+
+.menu-conteiner {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    width: 480px;
+    height: 796px;
+
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+
+    &.is-open {
+        display: block;
+    }
 }

@@ -7,6 +7,10 @@ body {
     cursor: pointer;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 h1, 
 h2, 
 h3, 
@@ -33,3 +37,4 @@ a {
     margin: 0;
     list-style: none;
 }
+

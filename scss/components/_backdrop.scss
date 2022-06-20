@@ -83,8 +83,19 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
 
+    padding: 93px 15px 94px 15px;
+    overflow-y: scroll;
+
     opacity: 1;
     transition: opacity 250ms var(--timing-function);
+
+    @media screen and (min-width: $tablet) {
+        padding: 208px 159px 207px 159px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 221px 536px 222px 536px;
+    }
 }
 
 .backdrop.is-hidden {
@@ -97,18 +108,28 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    min-height: 581px;
-    min-width: 528px;
+    min-height: 609px;
+    max-width: 450px;
     padding: 40px;
-
     background-color: var(--title-white-color);
 
-    transform: translate(-50%, -50%) scale(1);
-    transition: opacity 250ms var(--timing-function);
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: opacity 250ms var(--timing-function);
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-height: 581px;
+        max-width: 528px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: opacity 250ms var(--timing-function);
+    }
 }
 
 .button__close {

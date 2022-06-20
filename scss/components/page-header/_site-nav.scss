@@ -86,7 +86,7 @@
 .site-nav__link.current{
     color: var(--accent-color);
 
-    &::after {
+    /*&::after {
         position: absolute;
         content: "";
         bottom: 0;
@@ -96,5 +96,5 @@
     
         background: var(--accent-color);
         border-radius: 2px;
-    }
+    }*/
 }
