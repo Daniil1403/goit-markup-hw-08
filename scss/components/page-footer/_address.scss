@@ -36,15 +36,15 @@ br {
 */
 
 .address__text {
-    /*margin-top: 20px;*/
+    margin-top: 20px;
     margin-bottom: 0;
     color: var(--title-white-color);
     line-height: 1.71;
     font-style: normal;
+    text-align: center;
 }
 
 .address__link {
-    margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -59,12 +59,9 @@ br {
     }
 }
 
-.address__list {
-    /*margin-top: 9px;*/
-}
-
-.address__list {
-    /*margin-top: 9px;*/
+.address__item {
+    margin-top: 8px;
+    text-align: center;
 }
 
 br {

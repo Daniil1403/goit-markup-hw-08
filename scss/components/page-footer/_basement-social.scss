@@ -61,28 +61,28 @@
 */
 
 .basement-social {
-    /*display: block;
-    margin-right: 93px;
-    margin-top: 12px;
-    margin-bottom: 40px;*/
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .basement-social__title {
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--title-white-color);
 }
 
 .basement-social__list {
-    /*display: flex;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
-    align-items: center;
 }
 
 .basement-social__item {
@@ -95,9 +95,9 @@
 }
 
 .basement-social__link {
-    /*display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
     padding: 0;
     border: 0;
     border-radius: 50%;

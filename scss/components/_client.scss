@@ -98,19 +98,16 @@
 
 /* Постоянные клиенты */
 .client {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .client__title {
-    /*margin-top: 0;
-    margin-bottom: 50px;*/
+    margin-bottom: 30px;
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -118,28 +115,27 @@
 }
 
 .client__list {
-    /*display: flex;*/
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
-    margin: 0;
     list-style: none;
     align-items: center;
+    margin: -15px;
 }
 
 .client__item {
     align-items: center;
-
-    &:not(:last-child) {
-        /*margin-right: 30px;*/
-    }
+    flex-basis: calc(100-2 * 30px / 2);
+    margin: 15px;
 }
 
 .client__link {
-    /*display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
     margin: 0;
     padding: 0;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -161,34 +157,34 @@
 
 .client__icon {
     fill: inherit;
-}
 
-.client__icon.group-1 {
-    width: 41px;
-    height: 46.7px;
-}
+    &.group-1 {
+        width: 41px;
+        height: 46.7px;
+    }
 
-.client__icon.group-2 {
-    width: 40px;
-    height: 52px;
-} 
+    &.group-2 {
+        width: 40px;
+        height: 52px;
+    } 
 
-.client__icon.group-3 {
-    width: 43.46px;
-    height: 41.18px;
-} 
+    &.group-3 {
+        width: 43.46px;
+        height: 41.18px;
+    } 
 
-.client__icon.group-4 {
-    width: 84.44px;
-    height: 40.62px;
-} 
+    &.group-4 {
+        width: 84.44px;
+        height: 40.62px;
+    } 
 
-.client__icon.group-5 {
-    width: 62.54px;
-    height: 45.43px;
-} 
+    &.group-5 {
+        width: 62.54px;
+        height: 45.43px;
+    } 
 
-.client__icon.group-6 {
-    width: 93.79px;
-    height: 43.93px;
+    &.group-6 {
+        width: 93.79px;
+        height: 43.93px;
+    }
 }

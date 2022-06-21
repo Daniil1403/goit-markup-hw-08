@@ -57,21 +57,20 @@
 
 /* FORM */
 .form {
-    width: 570px;
+    width: 450px;
     padding: 0;
-    /*margin-top: 12px;
-    margin-bottom: 34px;*/
 }
 
 .form__title {
-    /*margin-bottom: 20px;*/
     padding: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--title-white-color);
+
 }
 
 .form__flex {
@@ -80,12 +79,14 @@
 
 .form__field {
     /*display: flex;*/
-    width: 358px;
+    width: 450px;
     height: 50px;
     /*margin-right: 12px;*/
 }
 
 .form__field input {
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 15px 0px 15px 16px;
     width: 100%;
     background-color: transparent;
