@@ -32,28 +32,38 @@
 }
 
 .basement {
-    /*display: flex;
-    align-items: center;*/
-    /*width: 1230px;*/
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-widht: $mobile) {
+    @media screen and (min-width: $mobile) {
         width: $mobile;
     }
 
-    @media screen and (min-widht: $tablet) {
+    @media screen and (min-width: $tablet) {
         width: $tablet;
     }
 
-    @media screen and (min-widht: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: $desktop;
+        display: flex;
+        align-items: center;
     }
 }
 
 .footer .basement-conteiner {
     padding-left: 0;
-    /*margin-right: 70px;*/
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+}
+
+.wrap {
+    
+    @media screen and (max-width: $desktop) {
+        display: flex;
+        padding-left: 200px;
+    }
 }

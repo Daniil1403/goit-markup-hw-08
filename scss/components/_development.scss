@@ -49,21 +49,26 @@
 /* Чем занимаемся */
 .development {
     display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
 }
 
 .development__title {
-    /*margin-bottom: 50px;*/
+    margin-bottom: 50px;
 }
 
 .development__list {
-    /*display: flex;*/
+    display: flex;
+    justify-content: center;
 }
 
 .development__item {
     position: relative;
 
     &:not(:last-child) {
-        /*margin-right: 30px;*/
+        margin-right: 30px;
     }
 }
 
@@ -86,8 +91,8 @@
 }
 
 .development__text {
-    /*margin-top: 27px;
-    margin-bottom: 27px;*/
+    margin-top: 27px;
+    margin-bottom: 27px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

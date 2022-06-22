@@ -40,17 +40,16 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /*width: 1230px;*/
 
-    @media screen and (min-widht: $mobile) {
+    @media screen and (min-width: $mobile) {
         width: $mobile;
     }
 
-    @media screen and (min-widht: $tablet) {
+    @media screen and (min-width: $tablet) {
         width: $tablet;
     }
 
-    @media screen and (min-widht: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: $desktop;
     }
 }

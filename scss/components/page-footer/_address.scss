@@ -59,9 +59,25 @@ br {
     }
 }
 
+.address__list {
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 9px;
+    }
+    
+}
+
 .address__item {
-    margin-top: 8px;
-    text-align: center;
+
+    @media screen and (max-width: $desktop) {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0;
+        text-align: left;
+    }
 }
 
 br {

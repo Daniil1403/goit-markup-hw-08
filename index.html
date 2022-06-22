@@ -16,44 +16,56 @@
                 <!-- Кнопка для мобилки -->
                 <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
                     <svg width="40", height="40" aria-label="Переключатель мобильного меню">
-                        <use class="menu-button__icon-cross" href="./images/socials/twitter.svg"></use>
-                        <use class="menu-button__icon-menu" href="./images/socials/facebook.svg"></use>
+                        <use class="menu-button__icon-menu" href="./images/icons.svg#cross"></use>
+                        <use class="menu-button__icon-cross" href="./images/icons.svg#menu"></use>
                     </svg>
                 </button>
                 <div class="menu-conteiner" id="menu-conteiner" data-menu>
-                    Контент меню
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link current">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                <div class="contriner-auth">
+                    <ul class="auth-nav list">
+                        <li class="auth-nav__item icon-envelope">
+                            <a href="mailto:info@devstudio.com" class="auth-nav__link">info@devstudio.com
+                                <svg class="auth-nav__icon" width="16px" heught="12px">
+                                    <use href="./images/symbol-defs.svg#envelope"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="auth-nav__item icon-vector">
+                            <a href="tel:+380961111111" class="auth-nav__link auth-nav__link--mobile">+38 096 111 11 11
+                                <svg class="auth-nav__icon" width="10px" heught="16px">
+                                    <use href="./images/symbol-defs.svg#vector"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-                <ul class="site-nav list">
-                    <li class="site-nav__item">
-                        <a href="" class="site-nav__link current">Студия</a>
+                <ul class="net__list list">
+                    <li class="net__item">
+                        <a href="" class="net__link">Instagram</a> 
                     </li>
-                    <li class="site-nav__item">
-                        <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                    <li class="net__item">
+                        <a href="" class="net__link">Twitter</a> 
                     </li>
-                    <li class="site-nav__item">
-                        <a href="" class="site-nav__link">Контакты</a>
+                    <li class="net__item">
+                        <a href="" class="net__link">Facebook</a> 
+                    </li>
+                    <li class="net__item">
+                        <a href="" class="net__link">LinkedIn</a> 
                     </li>
                 </ul>
+                </div>
             </nav>
-            <div class="contriner-auth">
-                <ul class="auth-nav list">
-                    <li class="auth-nav__item icon-envelope">
-                        <a href="mailto:info@devstudio.com" class="auth-nav__link">info@devstudio.com
-                            <svg class="auth-nav__icon" width="16px" heught="12px">
-                                <use href="./images/symbol-defs.svg#envelope"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="auth-nav__item icon-vector">
-                        <a href="tel:+380961111111" class="auth-nav__link">+38 096 111 11 11
-                            <svg class="auth-nav__icon" width="10px" heught="16px">
-                                <use href="./images/symbol-defs.svg#vector"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </header>
     <main>
@@ -68,21 +80,21 @@
                             <h2 class="form-modal__title">Оставьте свои данные, мы вам перезвоним</h2>
                             <div class="form-modal__groop">
                                 <label for="name">Имя</label>
-                                <input type="name" name="name" id="name">
+                                <input type="name" name="name" id="name" required>
                                 <svg class="form-modal__svg">
                                     <use href="./images/icons.svg#person"></use>
                                 </svg>
                             </div>
                             <div class="form-modal__groop">
                                 <label for="phone">Телефон</label>
-                                <input type="text" name="phone" id="phone">
+                                <input type="text" name="phone" id="phone" required>
                                 <svg class="form-modal__svg">
                                     <use href="./images/icons.svg#phone"></use>
                                 </svg>
                             </div>
                             <div class="form-modal__groop">
                                 <label for="mail">Почта</label>
-                                <input type="text" name="mail" id="mail">
+                                <input type="text" name="mail" id="mail" required>
                                 <svg class="form-modal__svg">
                                     <use href="./images/icons.svg#email"></use>
                                 </svg>
@@ -115,8 +127,8 @@
         <section class="section">
             <div class="conteiner">
                <!--<h2 class="section-title">Особенности</h2>--> 
-                <ul class="peculiarities list">
-                    <li class="peculiarities__list icon-antenna">
+                <ul class="peculiarities__list list">
+                    <li class="peculiarities__item icon-antenna">
                         <div class="peculiarities__conteiner">
                             <svg class="peculiarities__svg">
                                 <use href="./images/symbol-defs.svg#antenna"></use>
@@ -125,7 +137,7 @@
                         <h3 class="peculiarities__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p class="peculiarities__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="peculiarities__list icon-clock">
+                    <li class="peculiarities__item icon-clock">
                         <div class="peculiarities__conteiner">
                             <svg class="peculiarities__svg">
                                 <use href="./images/symbol-defs.svg#clock"></use>
@@ -134,7 +146,7 @@
                         <h3 class="peculiarities__title">ПУНКТУАЛЬНОСТЬ</h3>
                         <p class="peculiarities__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="peculiarities__list icon-diagram">
+                    <li class="peculiarities__item icon-diagram">
                         <div class="peculiarities__conteiner">
                             <svg class="peculiarities__svg">
                                 <use href="./images/symbol-defs.svg#diagram"></use>
@@ -143,7 +155,7 @@
                         <h3 class="peculiarities__title">ПЛАНИРОВАНИЕ</h3>
                         <p class="peculiarities__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="peculiarities__list icon-astronaut">
+                    <li class="peculiarities__item icon-astronaut">
                         <div class="peculiarities__conteiner">
                             <svg class="peculiarities__svg">
                                 <use href="./images/symbol-defs.svg#astronaut"></use>
@@ -398,52 +410,54 @@
     </main>
     <footer class="footer">
         <div class="basement">
-            <div class="basement-conteiner">
-                <a href="" class="logo logo--footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
-            <address class="address">
-                <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p> <br/>
-                <ul class="address__list">
-                    <li class="address__item">
-                        <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a> <br/>
-                    </li>
-                    <li class="address__item">
-                        <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </address>
-            </div>
-            <div class="basement-social">
-                <h2 class="basement-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-                <ul class="basement-social__list list">
-                    <li class="basement-social__item">
-                        <a href="" class="basement-social__link" aria-label="instagram">
-                            <svg class="basement-social__icon">
-                                <use href="./images/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="basement-social__item">
-                        <a href="" class="basement-social__link" aria-label="twitter">
-                            <svg class="basement-social__icon">
-                                <use href="./images/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="basement-social__item">
-                        <a href="" class="basement-social__link" aria-label="facebook">
-                            <svg class="basement-social__icon">
-                                <use href="./images/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="basement-social__item">
-                        <a href="" class="basement-social__link" aria-label="linkedin">
-                            <svg class="basement-social__icon">
-                                <use href="./images/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="wrap">
+                <div class="basement-conteiner">
+                    <a href="" class="logo logo--footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
+                <address class="address">
+                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p> <br/>
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a> <br/>
+                        </li>
+                        <li class="address__item">
+                            <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+                </div>
+                <div class="basement-social">
+                    <h2 class="basement-social__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+                    <ul class="basement-social__list list">
+                        <li class="basement-social__item">
+                            <a href="" class="basement-social__link" aria-label="instagram">
+                                <svg class="basement-social__icon">
+                                    <use href="./images/symbol-defs.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="basement-social__item">
+                            <a href="" class="basement-social__link" aria-label="twitter">
+                                <svg class="basement-social__icon">
+                                    <use href="./images/symbol-defs.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="basement-social__item">
+                            <a href="" class="basement-social__link" aria-label="facebook">
+                                <svg class="basement-social__icon">
+                                    <use href="./images/symbol-defs.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="basement-social__item">
+                            <a href="" class="basement-social__link" aria-label="linkedin">
+                                <svg class="basement-social__icon">
+                                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form class="form">
                 <h2 class="form__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>

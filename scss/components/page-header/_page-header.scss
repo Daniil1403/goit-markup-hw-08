@@ -39,15 +39,15 @@
     border-bottom-style: solid;
     border-bottom-color: var(--primery-bgr-color);
 
-    @media screen and (min-widht: $mobile) {
+    @media screen and (min-width: $mobile) {
         width: $mobile;
     }
 
-    @media screen and (min-widht: $tablet) {
+    @media screen and (min-width: $tablet) {
         width: $tablet;
     }
 
-    @media screen and (min-widht: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: $desktop;
     }
 }
@@ -61,7 +61,7 @@
     margin-left: auto;
     margin-right: auto;
     
-    @media screen and (min-widht: $tablet) {
+    @media screen and (min-width: $tablet) {
         height: 80px;
     }
 
@@ -73,7 +73,6 @@
 }
 
 .contriner-auth {
-    display: none;
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -92,7 +91,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color:red;
+    background-color: transparent;
 
     & .menu-button__icon-cross {
         display: none;
@@ -112,21 +111,28 @@
 }
 
 .menu-conteiner {
-    display: none;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    width: 480px;
     height: 796px;
 
-    background-color: red;
+    background-color: var(--title-white-color);
     text-align: center;
-    padding: 20px;
     font-size: 20px;
 
-    &.is-open {
-        display: block;
+    @media screen and (max-width: $tablet) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 48px 40px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        height: 80px;
     }
 }
+

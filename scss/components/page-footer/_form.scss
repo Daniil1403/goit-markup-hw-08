@@ -59,6 +59,13 @@
 .form {
     width: 450px;
     padding: 0;
+    margin: 0 auto;
+
+    @media screen and (min-width: $desktop) {
+        width: 570px;
+        
+        margin-bottom: 34px;
+    }
 }
 
 .form__title {
@@ -68,20 +75,35 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
     color: var(--title-white-color);
 
+    @media screen and (max-width: $desktop) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 20px;
+        text-align: left;
+    }
 }
 
 .form__flex {
-    /*display: flex;*/
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .form__field {
-    /*display: flex;*/
     width: 450px;
     height: 50px;
-    /*margin-right: 12px;*/
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+    } 
 }
 
 .form__field input {
@@ -103,11 +125,18 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: $desktop) {
+        margin: 0;
+    } 
 }
 
 .form__icon {
-    /*display: flex;*/
     width: 24px;
     height: 24px;
     fill: var(--title-white-color);
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    } 
 }
