@@ -63,8 +63,8 @@
 
     @media screen and (min-width: $desktop) {
         width: 570px;
-        margin-top: 12px;
-        margin-bottom: 34px;
+        margin-bottom: 22px;
+        margin-left: auto;
     }
 }
 
@@ -77,7 +77,7 @@
     text-transform: uppercase;
     color: var(--title-white-color);
 
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
 

@@ -41,7 +41,10 @@ br {
     color: var(--title-white-color);
     line-height: 1.71;
     font-style: normal;
-    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .address__link {

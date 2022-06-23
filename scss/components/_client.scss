@@ -132,26 +132,24 @@
     padding: 0;
     list-style: none;
     align-items: center;
+    justify-content: center;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 1199px) {
         margin: -15px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        justify-content: center;
     }
 }
 
 .client__item {
     align-items: center;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
         flex-basis: calc(100-2 * 30px / 2);
         margin: 15px;
     }
 
-    @media screen and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         flex-basis: calc(100-3 * 30px / 3);
+        margin: 15px;
     }
 
     @media screen and (min-width: $desktop) {
