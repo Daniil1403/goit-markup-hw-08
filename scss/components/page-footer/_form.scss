@@ -64,7 +64,9 @@
     @media screen and (min-width: $desktop) {
         width: 570px;
         margin-bottom: 22px;
-        margin-left: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
     }
 }
 

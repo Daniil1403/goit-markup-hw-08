@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/overlay.jpg);
+    url(/images/hero/overlay-1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,6 +56,15 @@
 
     @media screen and (min-width: $desktop) {
         min-height: 600px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url('/images/hero/overlay-2x.jpg');
+        }
     }
 }
 

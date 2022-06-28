@@ -1,7 +1,19 @@
 /* Навигация */
 .row {
-    /*display: flex;
-    justify-content: center;*/
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .row__list {
@@ -56,12 +68,20 @@
 
 .row__btn--design {
     width: 103px;
-    margin-top: 15px;
-    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+        & {
+            margin-top: 15px;
+        }
+    }
 }
 
 .row__btn--marketing {
     width: 130px;
-    margin-top: 15px;
-    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+        & {
+            margin-top: 15px;
+        }
+    }
 }
