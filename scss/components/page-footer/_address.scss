@@ -36,53 +36,50 @@ br {
 */
 
 .address__text {
-    margin-top: 20px;
-    margin-bottom: 0;
-    color: var(--title-white-color);
-    line-height: 1.71;
-    font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: var(--title-white-color);
+  line-height: 1.71;
+  font-style: normal;
 
-    @media screen and (max-width: 1199px) {
-        text-align: center;
-    }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .address__link {
-    padding: 0;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    line-height: 1.71;
-    font-style: normal;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 1.71;
+  font-style: normal;
 
-    transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address__list {
-
-    @media screen and (min-width: $desktop) {
-        margin-top: 9px;
-    }
-    
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
 }
 
 .address__item {
+  @media screen and (max-width: $desktop) {
+    margin-top: 8px;
+    text-align: center;
+  }
 
-    @media screen and (max-width: $desktop) {
-        margin-top: 8px;
-        text-align: center;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-top: 0;
-        text-align: left;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 br {
-    display: none;
+  display: none;
 }

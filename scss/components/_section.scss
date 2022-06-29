@@ -26,48 +26,45 @@
 }
 */
 
-
-
-
 /* Section */
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .conteiner {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .development {
-    padding-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .development__title {
-    /*margin-top: 0;*/
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+  /*margin-top: 0;*/
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }

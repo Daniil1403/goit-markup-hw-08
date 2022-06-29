@@ -136,7 +136,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -497,12 +497,14 @@ img {
   }
 }
 
-.menu-button__icon-men:hover, :focus {
+.menu-button__icon-men:hover,
+:focus {
   fill: var(--accent-color);
 }
 
 .menu-conteiner {
   height: 796px;
+  z-index: 1;
   background-color: var(--title-white-color);
   text-align: center;
   font-size: 20px;
@@ -687,7 +689,7 @@ img {
 @media screen and (min-width: 768px) {
   .site-nav__link.current::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1211,7 +1213,7 @@ img {
 }
 
 .button__close:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   border-radius: 50%;
 }
 
@@ -1461,7 +1463,7 @@ textarea {
 }
 
 .form-modal__groop input:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
@@ -1486,7 +1488,7 @@ textarea {
 }
 
 .form-modal__groop textarea:focus {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
@@ -2321,7 +2323,7 @@ textarea {
   border-radius: 50%;
   height: 44px;
   width: 44px;
-  color: #AFB1B8;
+  color: #afb1b8;
   text-align: center;
   -webkit-transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
@@ -2531,11 +2533,11 @@ textarea {
   padding: 0;
   width: 210px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   background: var(--title-white-color);
   text-align: center;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   -webkit-transition: border 250ms var(--timing-function), border-radius 250ms var(--timing-function), fill 250ms var(--timing-function);
   transition: border 250ms var(--timing-function), border-radius 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
@@ -2619,7 +2621,7 @@ textarea {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .basement {
@@ -3345,13 +3347,13 @@ br {
   overflow: hidden;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #EEEEEE;
+  border-right-color: #eeeeee;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #EEEEEE;
+  border-left-color: #eeeeee;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #EEEEEE;
+  border-bottom-color: #eeeeee;
   -webkit-transition: border-radius 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   transition: border-radius 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function), border-radius 250ms var(--timing-function);

@@ -28,123 +28,120 @@
     align-items: center;
 }*/
 
-
-
-
 /* Header */
 .header {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--title-white-color);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: var(--primery-bgr-color);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--title-white-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--primery-bgr-color);
 
-    @media screen and (max-width: 1199px) {
-        position: relative;
-    }
+  @media screen and (max-width: 1199px) {
+    position: relative;
+  }
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .mail-nav {
-    display: flex;
-    align-items: center;
-    min-height: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    @media screen and (min-width: $tablet) {
-        height: 80px;
-    }
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
 }
 
 .conteiner-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .contriner-auth {
-
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        margin-left: auto;
-        align-items: center;
-        margin-top: 21px;
-        margin-bottom: 21px;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
 }
 
 /* Кнопка для мобилки */
 .menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 
-    & .menu-button__icon-cross {
-        display: none;
-    }
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 
-    &.is-open .menu-button__icon-cross {
-        display: block;
-    }
+  & .menu-button__icon-cross {
+    display: none;
+  }
 
-    &.is-open .menu-button__icon-menu {
-        display: none;
-    }
+  &.is-open .menu-button__icon-cross {
+    display: block;
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
+  &.is-open .menu-button__icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
-    
-.menu-button__icon-men:hover, :focus {
-    fill: var(--accent-color);
-}  
+
+.menu-button__icon-men:hover,
+:focus {
+  fill: var(--accent-color);
+}
 
 .menu-conteiner {
-    height: 796px;
+  height: 796px;
+  z-index: 1;
 
-    background-color: var(--title-white-color);
-    text-align: center;
-    font-size: 20px;
+  background-color: var(--title-white-color);
+  text-align: center;
+  font-size: 20px;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 48px 40px;
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
 
-        &.is-open {
-            display: block;
-        }
+    &.is-open {
+      display: block;
     }
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        height: 80px;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    height: 80px;
+  }
 }
-

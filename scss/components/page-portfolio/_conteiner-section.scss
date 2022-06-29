@@ -1,28 +1,27 @@
 /* Styles.css for portfolio.html */
 .conteiner-section {
-    /*padding-top: 94px;
+  /*padding-top: 94px;
     padding-bottom: 94px;*/
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .conteiner-portfolio {
-    /*width: 1230px;*/
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  /*width: 1230px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
-

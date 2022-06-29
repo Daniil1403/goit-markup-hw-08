@@ -48,56 +48,56 @@
 
 /* Чем занимаемся */
 .development {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: $desktop) {
-        display: block;
-    }
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .development__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .development__list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .development__item {
-    position: relative;
+  position: relative;
 
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .development__product {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
 
-    width: 100%;
-    min-height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  min-height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
 
-    transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-        opacity: 1;
-    }
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .development__text {
-    margin-top: 27px;
-    margin-bottom: 27px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-white-color);
+  margin-top: 27px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-white-color);
 }

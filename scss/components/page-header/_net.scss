@@ -1,22 +1,22 @@
 .net__list {
-    display: flex;
-    margin-top: 32px;
+  display: flex;
+  margin-top: 32px;
 
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .net__item {
-    &:not(:last-child) {
-        margin-right: 20px;
-    }
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .net__link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }

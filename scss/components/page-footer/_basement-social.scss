@@ -61,84 +61,83 @@
 */
 
 .basement-social {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
-    @media screen and (max-width: 767px) {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    
-    @media screen and (min-width: $tablet) {
-        margin-top: 5px;
-        margin-right: 74px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-top: 5px;
+    margin-right: 74px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        display: block;
-        margin-right: 93px;
-        margin-bottom: 40px;
-        margin-top: 12px;
-    }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-right: 93px;
+    margin-bottom: 40px;
+    margin-top: 12px;
+  }
 }
 
 .basement-social__title {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--title-white-color);
-    text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-white-color);
+  text-align: center;
 
-    @media screen and (min-width: $desktop) {
-        text-align: left;
-    }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .basement-social__list {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-    @media screen and (max-width: $desktop) {
-        justify-content: center;
-    }
+  @media screen and (max-width: $desktop) {
+    justify-content: center;
+  }
 }
 
 .basement-social__item {
-    height: 44px;
-    width: 44px;
+  height: 44px;
+  width: 44px;
 
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .basement-social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
-    color: var(--title-white-color);
-    background: rgba(255, 255, 255, 0.1);
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  color: var(--title-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
 
-    transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .basement-social__icon {
-    height: 20px;
-    width: 20px;
-    fill: currentColor;
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
 }

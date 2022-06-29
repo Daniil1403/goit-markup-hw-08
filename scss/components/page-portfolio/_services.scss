@@ -1,111 +1,111 @@
 /* Услуги */
 .services {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    @media screen and (min-width: $tablet) {
-        margin: -15px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin: -15px;
+  }
 }
 
 .services__list {
-    overflow: hidden;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: #EEEEEE;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: #EEEEEE;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #EEEEEE;
+  overflow: hidden;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
 
-    transition: box-shadow 250ms var(--timing-function), 
-    border-radius 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function), border-radius 250ms var(--timing-function);
 
-    &:hover {
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+  &:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
 
-    @media screen and (max-width: 767px) {
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+  @media screen and (min-width: $tablet) {
+    & {
+      width: 354px;
     }
+  }
 
-    @media screen and (min-width: $tablet) {
-        & {
-            width: 354px;
-        }
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc(100-2 * 30px / 2);
+    margin: 15px;
+  }
 
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        flex-basis: calc(100-2 * 30px / 2);
-        margin: 15px;
+  @media screen and (min-width: $desktop) {
+    & {
+      width: 370px;
+      flex-basis: calc(100-3 * 30px / 3);
+      margin: 15px;
     }
-
-    @media screen and (min-width: $desktop) {
-        & {
-            width: 370px;
-            flex-basis: calc(100-3 * 30px / 3);
-            margin: 15px;
-        }
-    }
+  }
 }
 
 .services__link {
-    /*display: inline-block;*/
+  /*display: inline-block;*/
 }
 
 .dec__text {
-    font-size: 16px;
-    line-height: 1.88;
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .product-overlay {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .product-overlay__hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 63px 24px;
-    background-color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: var(--accent-color);
 
-    transform: translateY(100%);
-    transition: transform 250ms var(--timing-function);
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
 
-    .services__link:hover &,
-    .services__link:focus & {
-        transform: translateY(0);
-    }
+  .services__link:hover &,
+  .services__link:focus & {
+    transform: translateY(0);
+  }
 }
 
 .product-overlay__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    float: left;
-    color: var(--title-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  float: left;
+  color: var(--title-white-color);
 }
 
 .desc {
-    padding: 20px 20px;
+  padding: 20px 20px;
 }
 
 .desc__title {
-    margin-bottom: 4px;
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
