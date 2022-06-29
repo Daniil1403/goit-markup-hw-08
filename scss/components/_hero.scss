@@ -44,7 +44,7 @@
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/hero/overlay-1x.jpg);
+    url(/images/hero/overlay-mobile-1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -59,7 +59,33 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url('/images/hero/overlay-2x.jpg');
+      background-image: url('/images/hero/overlay-mobile-2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url('/images/hero/overlay-tablet-1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('/images/hero/overlay-tablet-2x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url('/images/hero/overlay-desktop-1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('/images/hero/overlay-desktop-2x.jpg');
+      }
     }
   }
 }
