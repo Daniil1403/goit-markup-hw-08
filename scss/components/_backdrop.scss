@@ -113,6 +113,8 @@
   max-width: 450px;
   padding: 40px;
   background-color: var(--title-white-color);
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $tablet) {
     position: absolute;

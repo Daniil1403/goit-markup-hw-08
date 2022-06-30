@@ -92,10 +92,13 @@
 
 .peculiarities__item {
   width: 100%;
-  margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -106,6 +109,7 @@
 
   @media screen and (min-width: $desktop) {
     width: 270px;
+    margin-bottom: 0;
     margin-right: 30px;
 
     &:last-child {
@@ -148,10 +152,6 @@
   @media screen and (min-width: $tablet) {
     text-transform: uppercase;
     text-align: left;
-  }
-
-  @media screen and (min-width: $desktop) {
-    text-align: center;
   }
 }
 
