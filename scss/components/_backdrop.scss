@@ -108,6 +108,10 @@
 }
 
 .modal {
+  @media screen and (max-width: 479px) {
+    height: 681px;
+  }
+
   position: relative;
   height: 609px;
   max-width: 450px;

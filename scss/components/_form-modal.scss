@@ -340,6 +340,11 @@ textarea {
     font-size: 14px;
     line-height: 1.71;
   }
+
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .modal-field__link {
@@ -364,6 +369,10 @@ textarea {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 479px) {
+    margin-right: 8px;
+  }
 }
 
 .modal-field__icon {

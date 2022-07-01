@@ -57,6 +57,11 @@
 
 /* FORM */
 .form {
+
+  @media screen and (max-width: 479px) {
+    width: 290px;
+  }
+
   width: 450px;
   padding: 0;
   margin: 0 auto;
