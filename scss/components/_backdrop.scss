@@ -109,12 +109,16 @@
 
 .modal {
   position: relative;
-  min-height: 609px;
+  height: 609px;
   max-width: 450px;
   padding: 40px;
   background-color: var(--title-white-color);
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $tablet) {
     position: absolute;

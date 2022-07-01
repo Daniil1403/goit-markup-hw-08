@@ -159,13 +159,18 @@ textarea {
 
 .form-modal__title {
   margin-top: 0;
+  margin-bottom: 12px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;;
+  }
 }
 
 .form-modal__groop {
@@ -311,26 +316,44 @@ textarea {
     }
 }
 */
+
 .modal-field {
-  text-align: left;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .modal-field__label {
-  font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-field__link {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
   text-align: left;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-field__label span {
