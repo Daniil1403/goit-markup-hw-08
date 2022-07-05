@@ -315,7 +315,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  cursor: pointer;
 }
 
 body.modal-open {
@@ -770,9 +769,22 @@ img {
   margin-top: 32px;
 }
 
+@media screen and (max-width: 479px) {
+  .net__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .net__list {
     display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .net__item:nth-child(2) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1026,6 +1038,7 @@ img {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 /* Form */
@@ -1155,6 +1168,10 @@ textarea {
   .form-modal__groop textarea {
     width: 448px;
   }
+}
+
+.button__close {
+  cursor: pointer;
 }
 
 .form-modal__svg {
