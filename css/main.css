@@ -1668,7 +1668,6 @@ textarea {
 }
 
 .network__item {
-  /*display: flex;*/
   height: 44px;
   width: 44px;
   -webkit-box-align: center;
